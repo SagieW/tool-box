@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+
+    <link rel="icon" href="{{ url_for ('static', filename='images/icon.png')}}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <script src="{{ url_for ('static', filename='js/script.js')}}"></script>
+
+    <title>Student Tool Box</title>
+
+  </head>
+  <body>
+
+    <a href="{{url_for('index')}}"> <h1>Student Tool Box</h1> </a>
+
+    <p class="bold">Text Convertor</p>
+    <p>Makes text proffesional.</p>
+
+    <form action="/textconvertor" id="convertor" method="POST">
+
+      <textarea name="original_text" rows="6" cols="40"></textarea><br>
+
+      <input type="submit" value="Convert">
+
+    </form>
+    
+  </body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="icon" href="{{ url_for ('static', filename='images/icon.png')}}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <script src="{{ url_for ('static', filename='js/script.js')}}"></script>
+
+    <title>Student Tool Box</title>
+
+  </head>
+  <body>
+
+    <a href="{{url_for('index')}}"> <h1>Student Tool Box</h1> </a>
+
+    <p>Student Essentials.</p>
+
+    <div class="grid-container">
+
+
+      <div class="grid-item">
+        <a href="https://www.lofi.cafe">Chill Studying Music</a>
+      </div>
+
+      <div class="grid-item">
+        <a href=" {{url_for('textconvertor')}} ">Text-Style Convertor</a>
+      </div>
+
+      <div class="grid-item">
+        <a href="https://www.csc.edu/learningcenter/study/studymethods.csc">Studying Tips & Advice</a>
+      </div>
+
+    </div>
+
+    
+    
+  </body>
+</html>

@@ -1,0 +1,46 @@
+body{
+	font-family: 'Muli',sans-serif;
+	text-align: center;
+}
+
+div{
+/*	border: 1px solid red;*/
+}
+
+.grid-container{
+	display: grid;
+	grid-template-columns: auto auto auto;
+
+	grid-column-gap: 50px;
+
+	margin: 70px 400px;
+
+}
+
+.grid-item{
+	height: 100px;
+	border: 1px solid black;
+
+	padding-top: 20px;
+}
+
+a{
+	text-decoration: none;
+}
+
+textarea{
+	margin-top: 20px;
+}
+
+button{
+	margin: 20px;
+}
+
+input{
+	margin: 20px;
+}
+
+
+.bold{
+	font-weight: bold;
+}
